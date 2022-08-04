@@ -1,0 +1,12 @@
+{
+  "name": "cjs-func",
+  "version": "1.0.4",
+  "description": "some common javascript functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "common"
+  ],
+  "author": "mm996",
+  "license": "MIT"
+}
