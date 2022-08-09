@@ -5,9 +5,9 @@ export const sleep = (time: number) => new Promise((resolve) => setTimeout(resol
 export const parse = (str: string) => {
   let res;
   try {
-    res = JSON.parse(str);
+    res = JSON.parse(decodeURIComponent(str));
   } catch (error) {
-    console.error(error);
+    // console.warn(error);
   }
 
   return res;
@@ -17,9 +17,9 @@ export const parse = (str: string) => {
 export const stringify = (obj: object) => {
   let res;
   try {
-    res = JSON.stringify(obj);
+    res = encodeURIComponent(JSON.stringify(obj));
   } catch (error) {
-    console.error(error);
+    // console.warn(error);
   }
 
   return res;
